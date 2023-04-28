@@ -1,0 +1,7 @@
+Last Lecture
+1 Introduction
+
+Today Lecture
+1 Angular software Setup
+2 Difference between angular Js Vs Angular 2+
+or Difference between Javascript Vs Typescript
