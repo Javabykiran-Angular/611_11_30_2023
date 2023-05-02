@@ -1,0 +1,22 @@
+Last Lecture
+1 Angular software Setup
+	 node 
+	 vscode
+	 typescript
+	 
+2 Difference between angular Js Vs Angular 2+
+or Difference between Javascript Vs Typescript
+
+ - writtent in js / written in typescript
+ - it is in object based / it is OOPS based
+ - memory is not effectively manage/ memory mang. effectively
+ - speed & performance is decreased / speed & performance is increased  
+ - MVC pattern / MVW pattern 
+ - it is not support mobile community / it is support all mobile community
+
+
+Today Lecture
+1 what is angular 12
+2 Why Angular?/ advantage of Angular ?/ explain the features of angular?
+3 Single Page Application 
+4 what is Typescript?
