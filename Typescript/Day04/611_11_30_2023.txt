@@ -1,0 +1,35 @@
+Last Lecture
+1 what is angular 12
+	- It is frontend Tech
+	- Freamwork
+	- Google 
+	- Core leading Tech
+	- gmail,gana.com,github,sbi mutual funds,walmart
+	- Angular,React Js,Embber Js ,Vue js, JSP 
+2 Why Angular?/ advantage of Angular ?/ explain the features of angular?
+	- it gives module, declarative templates,dependancy injection,service,end to end tooling
+	- It is used SPA Application for complex application
+	- one freamwork to all
+	- it is cross platform progressive web app 
+	- speed & performance increase 
+	- universal freamwork
+	- code splitting 
+	- in build angular cli 
+	- it provides eqal importance for appl writing & tesying 
+	
+3 Single Page Application 
+	- 1 head & 1 body 
+	- one html file index.html 
+	- spa env no page reload & no extra wait time 
+	
+4 what is Typescript?
+	- it is OOPS
+	- microsoft
+	- it is superset of JS 
+	- ecma script standard +ecma script version(JS) + additional features = Typescript
+
+Today Lecture
+1 Advantage & disadvantage of Typescript
+2 Overview of vscode 
+	- it is code editor 
+3 Simple program of typescript
