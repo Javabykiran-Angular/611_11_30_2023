@@ -1,0 +1,35 @@
+Last Lecture
+1 Advantage & disadvantage of Typescript
+	1 strong static type 
+	2 compile time error 
+	3 it support oops 
+	
+	disadvatage 
+	1 browser doesn't understand
+		tsc => typescript compiler 
+		it transcompile to .ts file to .js file 
+	2 it takes time to compile 
+2 Overview of vscode 
+	- it is code editor 
+	
+3 Simple program of typescript
+	demo1.ts 
+	
+	console.log("Hello world");
+	console.log('....')
+	console.log(`
+		......
+	`)
+	
+	tsc demo1.ts 
+	node demo1.js
+	
+	tsc demo1.ts & node demo1.js 
+	
+	
+
+Today Lecture
+1 variable
+2 data types 
+3 type assertion
+4 operators
