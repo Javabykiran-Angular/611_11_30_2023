@@ -1,0 +1,38 @@
+Last Lecture
+1 variable
+	var a1,a2;
+	
+2 data types
+	number,string,boolean,any,void,misec. null & undefined 
+	var a:number=10;
+	console.log("value of a "+a);
+	var str!:string;
+	console.log(str) => undefined => default value 
+	var a; => default data type is any 
+	var a=30;
+	var myanay:any;
+		myanay=2.5
+		....
+		myanay='sumit';
+		..
+		
+3 type assertion
+	- any/Object/unknown
+	1 angle bracket
+		var a:any;
+		var temp=(<string> a);
+		
+	2 as syntax 
+		var temp1=(a as string);
+		
+	
+4 operators
+	airthmatic,logical,bitwise,conditionl,rlation,ternary,unary,assignment 
+	==   => it checks only value 
+	===  => strongly equality => it checks value as well as data type 
+
+Today Lecture
+1 Control Statement	
+2 Loop statement
+3 var VS let Vs const
+4 functions 
