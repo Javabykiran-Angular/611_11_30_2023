@@ -1,0 +1,67 @@
+Last Lecture
+1 Control Statement
+	if,if-else,if else ladder ,switch,break,continue
+	if(cnt<4){
+	
+	}else {
+	
+	}
+	
+	switch(choice){
+		case 1: ..
+				break;
+		case 2: ...
+				break;
+		default: ...
+				break;
+				
+	}
+2 Loop statement
+	- while,do-while,for ,foreach 
+	while (cont!=0){
+	...
+	count--;
+	}
+	
+	do{
+		console.log();
+		count--;
+	}while ()
+3 var VS let Vs const
+
+for (var i=0;i<4;i++){
+...
+}
+
+for (let i=0;i<4;i++){
+...
+}
+
+const pi=3.14;
+
+4 functions 
+	function add1(a:number,b:number){
+		console.log(a+b);
+	}
+	
+	add1(4,6);
+	
+	function add3():number{
+		return (8+8);
+	}
+	
+	let res=add3();
+	console.log(res);
+	
+	function add4(a:number,b:number):number{
+		return (a+b);
+	}
+	
+	console.log("Addition "+add4(6,4)
+
+Today Lecture
+1 Anonymous function
+2 fat arrow function
+3 optional parameter function
+4 default parameter function
+5 array basic 
