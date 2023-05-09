@@ -1,0 +1,54 @@
+Last Lecture
+1 Anonymous function
+	let temp1=function (){
+	console.log(...)
+	}
+	
+	temp1();
+	let temp2=function (a:number,b:number):number{
+		return (a+b)
+	}
+	let res=temp2(4,6);
+	...
+2 fat arrow function/Arrow function
+	let temp3=()=>{
+	console.log()
+	}
+	
+	temp3();
+	
+	
+	let temp4=(a:number,b:number):number=>{
+		return (a+b)
+	}
+	
+	....
+	
+3 optional parameter function
+	function add1(a?:number,b?:number){
+	....
+	}
+	add1(4);
+	add1(4,6);
+4 default parameter function
+	function add1(a:number=4,b?:number){
+			
+	}
+	
+	add1(7)
+	add1(7,10)
+5 array basic 
+	let a:number[]=[2,3,4,5];
+	let a:number[]=[];
+	let a=[7,8,9]
+	let a:any[]=[2.5,'sumit',true];
+	
+
+Today Lecture
+1 Join Method
+2 foreach method
+3 rest parameter function
+4 push & pop
+5 splice method 
+6 slice method 
+
