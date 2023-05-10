@@ -1,0 +1,36 @@
+Last Lecture
+1 Join Method
+	console.log(a.join(" "))
+2 foreach method
+	a.forEach((value,i)=>{
+		console.log(value)
+	})
+3 rest parameter function
+	function display(str:string,...item:number[]){
+		console.log(item)
+	}
+	display('Sumit',45,85);
+4 push & pop
+	- LIFO 
+	a.push(78);
+	a.push(80,81,65);
+	let res=a.pop();
+	
+5 splice method 
+	
+	a.splice(5,0,90)
+	a.splice(5,0,90,12,13);
+	a.splice(2,1);
+	
+	
+6 slice method 
+	let temp=str.slice(2,9)
+	...
+	let temp1=str.slice(2);
+	let temp2=str.slice();
+	
+
+Today Lecture
+1 json Object
+2 array of Object
+
