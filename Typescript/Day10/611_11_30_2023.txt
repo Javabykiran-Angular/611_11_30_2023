@@ -1,0 +1,100 @@
+Last Lecture
+1 json Object
+	let jsonobj={
+		id:9,
+		"fname":'Sumit',
+		lname:".."
+	}
+	
+	1 dot operator
+	2 square 
+	
+	console.log(
+		jsonobj.id 
+		jsonobj.fname
+		...
+	)
+	
+	console.log(
+		
+		jsonobj["id"]
+		jsonobj['fname']
+		...
+	)
+	
+2 array of Object
+	
+	let arrobj=[
+		{
+			id:9,
+			fname:'',
+			lname :'',
+			country:{
+				cid:1,
+				cname:"India"
+			},
+			month:[".."],
+			result:[
+				{
+					subj:"M1",
+					marks:40
+				},
+				{
+					subj:"M1",
+					marks:40
+				},
+				{
+					subj:"M1",
+					marks:40
+				}
+			]
+		},
+		{
+			id:9,
+			fname:'',
+			lname :''
+		},
+		{
+			id:9,
+			fname:'',
+			lname :''
+		}
+	]
+	
+	for(let i=0;i<arrobj.length;i++){
+		console.log(
+		
+			arrobj[i].id
+			arrobj[i].fname
+			arrobj[i].country.cname
+			arrobj[i].month.join("  ")
+		)
+		
+		for(let j=0;j<arrobj[i].result.length;j++){
+			console.log(
+				arrobj[i].result[j].subj
+				arrobj[i].result[j].marks
+			)
+		}
+		
+		
+		arrobj[i].result.forEach((myvalue)=>{
+				console.log(
+					myvalue.subj
+					myvalue.marks
+				)
+		})
+		
+		
+	}
+	
+
+Today Lecture
+1 Additional Features of Typescript
+2 Class,object,property,methods
+3 constructor
+4 Access Specifier
+5 Access in same package
+6 Access in different package
+
+
