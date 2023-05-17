@@ -1,0 +1,92 @@
+Last Lecture
+
+1 inheritance
+	single,multilevel,hireachical
+	
+	export class Shape{
+		Myarea(){
+		...
+		}
+	}
+	
+	circle.ts
+	import {Shape} from './shape';
+	
+	export class Circle extends Shape{
+		rdaius:number;
+		area:number;
+		constructor(r:number){
+			super();
+			...
+		}
+		override Myarea(){
+			this.area=3.14*...
+		}
+		
+		display(){
+		....
+		}
+	}
+	
+	...
+	
+	maininheritance.ts
+	
+	let obj=new Circle(2);
+	obj.Myarea();
+	obj.display();
+	
+	....
+	
+2 method override
+3 interface 
+	export interface Employee{
+		lname:string;
+		fname:string;
+		fullname?:string;
+		
+		display();
+		
+	}
+	
+	
+	export class EmployeeDetails implements Employee{
+		lname:string;
+		fname:string;
+		
+		sal:number;
+		dept:Department;
+		constructor(...,role:string){
+		.....
+		this.dept=new Department(role)
+		}
+		
+		display(){
+		.....
+		department :: ${this.dept.getRole()}
+		}
+		
+		
+	}
+	
+	let obj=new EmployeeDetails(...);
+	obj.display();
+	
+	export class Department{
+		private role:string;
+		
+		//getter & setter
+		getRole():string{
+			return this.role;
+		}
+	}
+	
+	
+4 composition/aggregation/has a reationship
+
+Today Lecture
+1 Angular Setup
+
+
+
+
