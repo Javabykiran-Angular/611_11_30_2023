@@ -1,0 +1,57 @@
+Last Lecture
+1 Component Creation manually => what is component?
+	employee
+	employee.component.html
+	<h2> ....
+	employee.component.css
+	employee.component.ts 
+	
+	@Component({
+		selector:'app-employee',
+		templateUrl:'./employee.component.html',
+		StyleUrls:['./employee.component.css']
+	})
+	export class EmployeeComponent{
+	
+	}
+	
+	app.module.ts 
+	declaration:[EmployeeComponent]
+	
+	app.component.html
+	<app-employee></app-employee>
+	
+2 Component creates using CLI 
+	ng g c student
+	
+	employee.component.html
+	<app-student>
+	
+3 data binding 
+	- data flows from component to view file 
+4 String interpolation
+	<h2> {{name}}</h2>
+	<h2> {{"Hi Welcome "+name}}</h2>
+	<h2> {{num+num}}</h2>
+	<img src=" {{imgUrl}} ">
+	.ts file
+	name:string='sumit Raokhande';
+	num:number=4;
+	imgUrl:string='../../assets/bg4.jpg';
+	
+
+Today Lecture
+1 Property Binding
+2 String interpolation Vs Property Binding
+3 Style binding
+
+1 What is Component? => Ashok dewadkar => Freshres
+2 Explain Angular Application Flow? => Akshay Mane => OJT
+3 What is String Interpolation? => Dhanshri Chaudhari => Freshres
+4 Explain Angular Features? => nikita jangale => Freshres
+
+	
+
+
+
+
