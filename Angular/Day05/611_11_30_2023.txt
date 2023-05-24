@@ -1,0 +1,77 @@
+Last Lecture
+1 Property Binding
+	<input [value]="name">
+	<img [src]="imgUrl">
+	
+	.ts file
+	name:string='..';
+	imgUrl:string='..'
+	
+2 String interpolation Vs Property Binding
+	
+		<div hidden=" {{isHidden}}">
+			display text
+			</div>
+		<div [hidden]="isHidden">
+		..
+			
+			.ts 
+		isHidden:boolean=false;
+	
+3 Style binding
+	<h2 [style.color]="mycolor">gfdahs
+	
+	<h2 [style.color]="rating<4?'red':'green'">
+	
+	ngStyle 
+	
+	<div [ngStyle]="jsonObj">
+	
+	
+	.ts 
+	mycolor:string='red'
+	jsonObj={
+		color:'blue',
+		fontSize:'32px',
+		"font-family":'..'
+	}
+	
+
+Today Lecture
+1 Class Binding
+2 Event Binding
+	- data/request flow from view to component file 
+3 click
+
+
+1 What is Component? => Ashok dewadkar => Freshres
+	Angular is component orientated Arch.
+	every component has 4 file => 
+	component has its own metadata 
+2 Explain Angular Application Flow? => Akshay Mane => OJT => not present
+3 What is String Interpolation? => Dhanshri Chaudhari => Freshres
+	- Good one 	
+4 Explain Angular Features? => nikita jangale => Freshres
+	1 Module => it is collection of classes 
+	2 Declarative Syntax
+	3 End to end tooling
+	4 Universal Freamework
+	5 Mobile and Cross-platform Development
+	6 Component-based Architecture=> MVW arch 
+	7 Code Splitting Functionality
+	8 Strong Tooling Support - Angular CLI
+
+	
+
+
+1 what is difference between property binding vs string interpolation
+=> mayur somvanshi=> freshers
+2 how data flows in propety binding => mahanada Mali => Freshers
+3 What is Style binding? => Ajit rathod => freshers
+4 What is difference between Angular js Vs Angular 2+ => Shrutika khode => Freshres
+
+	
+
+
+
+
