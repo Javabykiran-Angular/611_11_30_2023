@@ -1,0 +1,53 @@
+Last Lecture
+1 Class Binding
+	<h2 [class]="myclass" > Apply class Binding </h2>
+	
+	<h2 [class.danger]="rating<4"
+		[class.warning]="rating>4">...
+		
+	<div [ngClass]="json">
+	
+	.ts file
+	myclass:string='success';
+	rating:number=2;
+	isError:boolean=true;
+	isSpecial:boolean=true
+	json={
+		'success':!this.isError,
+		'danger' : this.isError,
+		'special': this.isSpecial
+	}
+2 Event Binding
+	- data/request flow from view to component file 
+3 click
+	<button (click)="onClick()">
+	
+	.ts 
+	count:number=0;
+	onClick(){
+		if(this.count==0){
+			console.log("")
+			this.count++;
+		}
+	
+	}
+
+1 what is difference between property binding vs string interpolation
+	=> mayur somvanshi=> freshers
+2 how data flows in propety binding => mahanada Mali => Freshers
+3 What is Style binding? => Ajit rathod => freshers => Good 
+4 What is difference between Angular js Vs Angular 2+ => Shrutika khode => Freshres => Good
+
+Today Lecture
+1 Click
+2 $event
+3 Template Ref Variable
+
+1 Explain Angular Application Flow? => Ajay narwade => Freshres 
+2 Explain Class Binding? why we Use? => Avantika deshmukh => Freshres
+
+	
+
+
+
+
