@@ -1,0 +1,16 @@
+<p>eventbinding3 works!</p>
+
+<input #num1 type="text" placeholder="Enter the Number 1"><br><br>
+<input #num2 type="text" placeholder="Enter the number 2"><br><br>
+<button (click)="onAddition(num1.value,num2.value)" >Addition</button> <br><br>
+<input type="text"   [value]="result" placeholder="Result" >
+<hr>
+
+<input type="text" placeholder="Enter the name" (change)="onChange()" >
+<hr>
+
+<input type="text" placeholder="keyup Event" (keyup)="onKeyUp()" > <br><br>
+
+<input type="text" placeholder="Key down event" (keydown)="onKeyDown()" ><br><br>
+
+<button (click)="add=8+8" >Addition</button> <h2 > {{add}} </h2>

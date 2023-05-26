@@ -1,0 +1,66 @@
+Last Lecture
+1 Click
+	<img src="..." (click)="onImage()">
+	
+	.ts file
+	onImage(){
+	....
+	}
+	
+2 $event
+	
+	<button value=".." (click)="onClick($event)">
+	.ts file 
+	onClick(myevent:any){
+	
+		console.log(myevent.target.value)
+		
+	
+	}
+	
+3 Template Ref Variable
+	
+	<input #inputname>
+	<button (click)="onClick(inputname)">
+	
+	<input #inputname1>
+	<button (click)="onClick1(inputname1.value)">
+	.ts file 
+	onClick(myname:any){
+		console.log(myname)
+		myname.value
+		myname.style.background='green';
+		myname.style.color='white';
+		
+	}
+	
+	onClick1(myvalue:string){
+		....
+	}
+
+1 Explain Angular Application Flow? => Ajay narwade => Freshres 
+	good 
+2 Explain Class Binding? why we Use? => Avantika deshmukh => Freshres
+Good
+
+
+Today Lecture
+1 Real Time Example
+2 change event 
+3 keyboard event
+	1 keyup
+	2 keydown
+4 without event handler perform event binding
+  - pre-requiret
+   we have to create one property
+   - we used when one line logic is there 
+
+1 Explain $event? => Adinath Sawant=> OJT 
+2 Explain Template Ref Variable? use of template ref variable => 
+Jayshri Freshres
+vishvesh mahalle => Freshres
+	
+
+
+
+
