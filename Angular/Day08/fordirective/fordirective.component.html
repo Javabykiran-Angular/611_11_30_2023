@@ -1,0 +1,17 @@
+<p>fordirective works!</p>
+
+<!-- syntax => 
+    *ngFor="let item of Arrayname"
+    - u can apply any html tag 
+-->
+
+    <ul>
+        <li *ngFor="let item of course"> {{item}} </li>
+        
+    </ul>
+    <hr>
+    <ul>
+        <li *ngFor="let item of course;index as i"> {{i+1}} {{item}} </li>
+        
+    </ul>
+

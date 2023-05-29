@@ -1,0 +1,68 @@
+Last Lecture
+1 Real Time Example
+	<input #input1>
+	<input #input2>
+	<button (click)="onAddition(input1.value,input2.value)">
+	<input [value]="result">
+	
+	.ts file 
+	result:number=0;
+	onAddition(num1:any,num2:any){
+		let n1=+num1
+		let n2=+num2;
+		this.result=n1+n2;
+	}
+	
+2 change event 
+	<input (change)="onChange()">
+	
+	.ts file 
+	onChange(){
+		....
+	}
+3 keyboard event
+	1 keyup
+		<input (keyup)="onKeyup()"
+		.ts file 
+		onKeyup(){
+		....
+		}
+	2 keydown
+	<input (keydown)="onKeydown()"
+		.ts file 
+		onKeydown(){
+		....
+		}
+4 without event handler perform event binding
+  - pre-requiret
+   we have to create one property
+   - we used when one line logic is there 
+   .ts file 
+   result:number=0;
+   .html 
+   <button (click)="result=8+8"> {{result}}
+
+1 Explain $event? => Adinath Sawant=> OJT => Good
+2 Explain Template Ref Variable? use of template ref variable => 
+Jayshri Freshres
+vishvesh mahalle => Freshres
+
+Today Lecture
+1 Two way Data binding
+2 Structural directive
+	- It is change ur DOM Structure or manipulate the structure dynamically 
+	for that it is called Structural directive
+	1 *ngIf => if u want to check the condition dynamically
+	2 *ngFor => if u want iterate dynamically to display a data 
+	3 *ngSwitch => if u want execute specific then u go for it 
+3 if directive
+4 for directive
+
+1 Explain Template Ref Variable? use of template ref variable => vaibhav dhere => freshers
+
+
+	
+
+
+
+

@@ -1,0 +1,12 @@
+<p>twowaybinding works!</p>
+
+<!-- ngModel
+    - It is attribute directive 
+    - It is used for two way data binding
+    - if u want use ngModel directive then u have import one module that is FormsModule in app.module.ts file 
+    - syntax => [()]=> bannana in box notation
+        [(ngModel)]="PropertyName"
+    - u can apply any html tag 
+-->
+
+<input type="text" placeholder="Enter the name" [(ngModel)]="name" > {{name}}
