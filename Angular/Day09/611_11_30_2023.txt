@@ -1,0 +1,54 @@
+Last Lecture
+1 Two way Data binding
+	
+	<input [(ngModel)]="name"> {{name}}
+	
+	app.module.ts
+	import:
+		FormsModule
+	
+	
+2 Structural directive
+	- It is change ur DOM Structure or manipulate the structure dynamically 
+	for that it is called Structural directive
+	1 *ngIf => if u want to check the condition dynamically
+	2 *ngFor => if u want iterate dynamically to display a data 
+	3 *ngSwitch => if u want execute specific logic then u go for it 
+3 if directive
+	<div *ngIf="rating<4;else myelse">
+		<h2> condition true</h2>
+	</div>
+	
+	<ng-template #myelse>
+		<h2>...
+	</ng-template>
+	
+	.ts 
+	rating:number=21;
+	
+4 for directive
+	<ul>
+		<li *ngFor="let item of course;index as i"> {{i+1}} {{item}} </li>
+	</ul>
+
+1 Explain Template Ref Variable? use of template ref variable => vaibhav dhere => freshers => great 
+
+Today Lecture
+1 for directive
+
+3 mouse event
+ 1 mouseover
+ 2 mouseout 
+4 real time example
+
+1 Explain structural directive? => Hrituj Bansod => Freshres
+
+
+
+
+
+	
+
+
+
+

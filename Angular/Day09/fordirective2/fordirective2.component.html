@@ -1,0 +1,45 @@
+<p>fordirective2 works!</p>
+
+<table border="1px">
+    <thead>
+        <th>Sr No.</th>
+        <th>Product Name</th>
+        <th>Product Price</th>
+        <th>Product Qty</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of arrproduct;index as i">
+            <td > {{i+1}} </td>
+            <td> {{item.name}} </td>
+            <td> {{item.price}} </td>
+            <td> {{item.qty}} </td>
+        </tr>
+    </tbody>
+</table>
+<hr>
+<table border="1px">
+    <thead>
+        <th>Sr No.</th>
+        <th>Product Name</th>
+        <th>Product Price</th>
+        <th>Product Qty</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of arrproduct;index as i" (mouseover)="onMouseOver(item)"
+        [ngClass]=" {
+            'highlight':selected === item.name
+        }"
+
+        (mouseout)="onMouseOut()"
+
+        >
+            <td > {{i+1}} </td>
+            <td> {{item.name}} </td>
+            <td> {{item.price}} </td>
+            <td> {{item.qty}} </td>
+        </tr>
+    </tbody>
+</table>
+<hr>
+<input [type]="isShow?'text':'password'" placeholder="Enter the password" > &nbsp;&nbsp;&nbsp; 
+<button (click)="onShow()" >Show</button>
