@@ -1,0 +1,73 @@
+Last Lecture
+1 for directive
+.ts arrproduct:any[]=[
+...
+];
+
+.html
+<table>
+	<thead>
+		<th>...</th>
+		..
+	</thead>
+	<tbody>
+		<tr *ngFor="let item of arrproduct;index as i"
+		
+			(mouseover)="onMouseOver(item)"
+			
+			[ngClass]="{
+				'highlight':selected===item.name
+			}"
+			
+			(mouseout)="onMouseOut()"
+		>
+			<td>{{i+1}}</td>
+			<td>{{item.name}}</td>
+			...
+		</tr>
+	</tbody>
+</table>
+
+.ts 
+selected:string='';
+onMouseOver(item:any){
+	this.selected=item.name;
+}
+
+onMouseOut(){
+	thsi.selected='';
+}
+	
+
+3 mouse event
+ 1 mouseover
+ 2 mouseout 
+4 real time example
+
+<input [type]="isShow?'text':'password'" >
+<button (click)="onShow()">
+.ts file
+isShow:boolean=false;
+onShow(){
+	this.isShow=!this.isShow;
+}
+
+1 Explain structural directive? => Hrituj Bansod => Freshres
+	great
+
+
+Today Lecture
+1 Switch Directive
+	- it execute a specific condtion on the requiremnet
+
+
+
+
+
+
+
+	
+
+
+
+
