@@ -1,0 +1,50 @@
+Last Lecture
+1 Switch Directive
+	- it execute a specific condtion on the requiremnet
+	<input #inputcolor>
+	<button (click)="onSend(inputcolor.value)">
+	<hr>
+	
+	<div [ngSwitch]="choice">
+		<div *ngSwitchCase="'red'"
+			[style.background]="choice"
+		> Your color name is  {{choice}}</div>
+		...
+		<div *ngSwitchDefault
+			[style.background]="choice==''?'black':'orange'"
+			[style.color]="choice==''?'white':'black'"
+			
+			[ngStyle]="{
+				'background':choice==''?'black':'orange',
+				'color':choice==''?'white':'black'
+			}"
+			
+		> Your color is wrong {{choice}}</div>
+	</div>
+	
+	.ts file 
+	onSend(colorname:string){
+		this.choice=colorname.toLowerCase().trim();
+	}
+
+
+Today Lecture
+1 Component Interaction
+	- pre requiest 
+	 - parent - child relation 	
+	
+2 @Input()
+	- To send data from parent to child 
+3 @Output()
+	- To send data from child to parent
+	- we have use custom event to emit/send a data 
+
+
+
+
+
+	
+
+
+
+
