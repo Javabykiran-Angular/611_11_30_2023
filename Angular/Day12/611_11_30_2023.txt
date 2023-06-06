@@ -1,0 +1,84 @@
+Last Lecture
+1 Component Interaction
+	- pre requiest 
+	 - parent - child relation 	
+	 
+	 app.component.html
+	 <app-parent>
+	 
+	 parent.ts 
+	 strdata:string='...';
+	 jsonj={
+	 ...
+	 }
+	 
+	 parent.html
+	 <app-child1 [Parentstrdata]="strdata"
+			[ParentJsonData]="jsonj">
+	 
+	 child1.ts
+	 @Input() Parentstrdata:string='';
+	 @Input() ParentJsonData:any={};
+	 
+	 child1.html 
+	 <h2> {{Parentstrdata}} </h2>
+	 <h2> {{ParentJsonData.id}}
+	 ....
+	
+2 @Input()
+	- To send data from parent to child 
+3 @Output()
+	- To send data from child to parent
+	- we have use custom event to emit/send a data 
+	
+	
+	parent.html
+	<h2> {{strdatareceived}}</h2> 
+	
+	
+	<table>
+	
+	....
+	<tr *ngFor="let item of arrDataReceived;index as i">
+		<td> {{i+1}}</td>
+		<td> {{item.name}}</td>
+		.....
+	
+	
+	<app-child2 (strdataEvent)="strdatareceived=$event" 
+			(ArrObjEvent)="arrDataReceived=$event"
+	>
+	
+	parent.ts 
+	strdatareceived:string='';
+	
+	child2.ts
+	
+	@Output() strdataEvent=new EventEmitter();
+	
+	@Output()	ArrObjEvent=new EventEmitter();
+	strdata:string='...';
+	arrproduct=[
+	..
+	]
+	
+	
+	onSend(){
+		this.strdataEvent.emit(this.strdata);
+		this.ArrObjEvent.emit(this.arrproduct);
+	}
+	
+Today Lecture
+1 Pipe
+	- if u want a transform a data without changing its value 
+2 inBuild Pipe
+
+
+
+
+
+	
+
+
+
+
