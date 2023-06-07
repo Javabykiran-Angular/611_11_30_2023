@@ -1,0 +1,53 @@
+Last Lecture
+1 Pipe
+	- if u want a transform a data without changing its value 
+2 inBuild Pipe
+	<h2> {{strdata | lowercase}}</h2>
+	<h2> {{strdata | uppercase}}</h2>
+	<h2> {{strdata | titlecase}}</h2>
+	<h2> {{strdata | slice:1:10 }}</h2>
+	
+	<h2> {{0.25 | percent}}</h2>
+	<h2> {{0.025 | percent:'1.1'}}</h2>
+	<h2> {{0.091 | percent:'2.2'}}</h2>
+	
+	<h2> {{0.25 | currency}}</h2>
+	<h2> {{0.25 | currency:'INR'}}</h2>
+	<h2> {{0.25 | currency:'INR':'code'}}</h2>
+	
+	<h2> {{5.67423589 | number:'1.2-3'}}</h2>
+	<h2> {{5.67453589 | number:'1.2-3'}}</h2>
+	
+	<h2> {{mydate |date:'mediumDate'}}</h2>
+	<h2> {{mydate |date:'shortDate'}}</h2>
+	<h2> {{mydate |date:'dd-MM-yyyy'}}</h2>
+	<h2> {{mydate |date:'longDate'|uppercase}}</h2>
+	
+	<h2> {{mydate |date:'hh:mm:ss a'}}</h2>
+	
+	
+	
+	.ts 
+	mydate=new Date();
+	
+
+Today Lecture
+1 Custom Pipe 
+2 PipeTransform
+	- it is interface
+	- it used to create a custom pipe 
+3 transform
+	- it is method 
+4 @Pipe 
+
+1 how we can pass event to one component to another.(L&T) => pratiksha => Freshers
+2 Have you use custom Pipe? How we can implement custom pipe? => Ravindra Mali => Freshers
+
+
+	
+http://kahoot.com/
+	
+
+
+
+
