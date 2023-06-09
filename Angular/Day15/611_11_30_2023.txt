@@ -1,0 +1,69 @@
+Last Lecture
+1 Services
+	what is service? Explain useage of service 
+	- service is simple class  in angular 
+	- It is used to Write ur BL
+	- it is used for code resualbility
+	- it is used for code maintnbility
+	- it provides isolation from ur component to http end point url 
+	- it is used to connect ur back end server to front end server 
+	
+	class CourseServiece{
+		private course:string[]=[...];
+		
+		getCourse(){
+			return this.course;
+		}
+	}
+	
+	course.ts
+	
+	mycourse:string[]=[];
+	
+	constructor(private service:CourseServiece){
+		//let service=new CourseServiece();
+		//this.mycourse=service.getCourse();
+	}
+	
+	ngOninit(){
+		this.mycourse=this.service.getCourse();
+	}
+	
+	course.html 
+	mycourse...
+	
+app.module.ts
+provider:[
+	CourseServiece
+]
+	
+2 Dependancy Injection
+
+Today Lecture
+1 Http Method
+	1 get  => fetch/get the data from backend server 
+	2 post => To send a data from frontend to back end server  
+	3 put  => to update a data  
+	4 delete => to delete a data 
+	
+2 http://jsonplaceholder.typicode.com/posts
+	
+	- It is fake service bcz it can not store a data into database (get/post/put/delete)=> it can reflect changes into ur database but it gives a response of ur request 
+	
+
+3 HttpClientModule
+	- it is given by angular 
+	to import that module => app.module.ts => import 
+	
+4 @Injectable()
+5 Observable
+6 get method
+
+
+
+
+	
+
+
+
+
