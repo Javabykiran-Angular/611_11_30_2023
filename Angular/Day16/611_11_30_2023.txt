@@ -1,0 +1,100 @@
+Last Lecture
+1 Http Method
+	1 get  => fetch/get the data from backend server 
+	2 post => To send a data from frontend to back end server  
+	3 put  => to update a data  
+	4 delete => to delete a data 
+	
+2 http://jsonplaceholder.typicode.com/posts
+	
+	- It is fake service bcz it can not store a data into database (get/post/put/delete)=> it can reflect changes into ur database but it gives a response of ur request 
+	
+
+3 HttpClientModule
+	- it is given by angular 
+	to import that module => app.module.ts => import 
+	
+	ng g s http 
+	
+	@Injectable({
+		providenIn:"root"
+	})
+	export class HttpService{
+		url:string='..';
+		constructor(private http:HttpClient){}
+		
+		getPost(){
+			return this.http.get(this.url);
+		}
+		
+		PostData(obj:any){
+			return (this.http.post(this.url,obj));
+		}
+		
+	}
+	
+	post.ts
+	posts:any[]=[];
+	constructor(private service:HttpService){}
+	
+	ngOninit(){
+		this.GetPost();
+	}
+	
+	GetPost(){
+		this.service.getPost()
+		.subscribe((response:any)=>{
+			...
+			this.posts=response;
+		})
+	}
+	
+	
+	
+	onSend(mytitle:any,mybody:any){
+		let obj={
+			title:mytitle,
+			body:mybody
+		}
+		this.service.PostData(obj)
+		.subscribe((response)=>{
+			console.log(response)
+		})
+	}
+	
+	post.html
+	
+	<input #inputTitle>
+	<input #inputBody>
+		<button (click)="onSend(inputTitle.value,inputBody.value)">send 
+	
+	<table>
+	...
+	<tbody>
+		<tr *ngFor="let item of posts">
+			<td> {{item.id}}</td>
+			<td> {{item.title}}</td>
+			<td> {{item.body}}</td>
+		</tr>
+	</tbody
+</table>
+	
+	
+4 @Injectable()
+5 Observable
+6 get method
+7post method
+
+Today Lecture
+1 put method
+2 delete method
+3 error handling
+
+
+
+
+	
+
+
+
+

@@ -1,0 +1,39 @@
+<p>post works!</p>
+
+<label for=""> Title::</label>&nbsp;&nbsp;
+<input #inputTitle type="text" placeholder="Enter the Title"><br><br>
+<label for=""> Body::</label>&nbsp;&nbsp;
+<input #inputBody type="text" placeholder="Enter the Body"><br><br>
+<button (click)="onSend(inputTitle.value,inputBody.value)" >Send</button>
+
+<hr>
+    <div [hidden]="isHidden">
+        <label for="">ID:: &nbsp;&nbsp;&nbsp;</label> 
+        <input [(ngModel)]="id" readonly type="text" placeholder="Enter the ID"><br><br>
+        <label for="">Title:: &nbsp;&nbsp;&nbsp;</label> 
+        <input [(ngModel)]="title" type="text" placeholder="Enter the Title"><br><br>  
+        <label for="">Body:: &nbsp;&nbsp;&nbsp;</label> 
+        <input [(ngModel)]="body" type="text" placeholder="Enter the Body"><br><br> 
+        <button (click)="onUpdate()">Update</button>
+    </div>
+<hr>
+
+<table border="1px">
+    <thead>
+        <th>Id</th>
+        <th>Action</th>
+        <th>Title</th>
+        <th>Body</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of posts">
+            <td > {{item.id}} </td>
+            <td><button (click)="onEdit(item)">Edit</button>
+                <button (click)="onDelete(item.id)">Delete</button>
+
+            </td>
+            <td > {{item.title}} </td>
+            <td> {{item.body}} </td>
+        </tr>
+    </tbody>
+</table>
