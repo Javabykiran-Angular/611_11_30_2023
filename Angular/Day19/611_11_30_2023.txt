@@ -1,0 +1,106 @@
+Last Lecture
+1 send multiple parameter
+	[
+		{
+			path:"Page3/:id/:username",component:Page3Component
+		}
+	]
+	
+	home.ts
+	myid:=9;
+	myusername:string='...';
+	home.html
+	< a [routerLink]="['/Page3',myid,myusername]">
+	
+	page3.ts 
+	
+	GetDataFrom(){
+		this.route.ParamMap
+		.subscribe((param:any)=>{
+		....
+		})
+	}
+	
+2 send queryparameter
+	
+	<a routerLink="/..." [queryParams]="json">
+	localhost:4200/query?....
+	
+	queryparameter.ts
+	
+	GetDataFrom(){
+		this.route.queryParamMap
+		.subscribe((param:any)=>{
+			param.get("...")
+		})
+	}
+	
+3 routing using navigate method
+	
+	- it is used in ts file 
+	
+	constructor(private router:Router){}
+	
+	onPage2(){
+		this.router.navigate(['/Page2',this.myid,this.myusername]);
+	}
+	onQueryParam(){
+		this.router.navigate(['...'],{
+			queryParams:this.json
+		})
+	}
+	
+4 Lazy Loading
+5 Create Custom Module 
+6 Create Custom routing file 
+
+	ng g m user --routing 
+	
+	ng g c listuer...
+	
+	[
+		{
+			path:"",component:ListUserComponent
+		},
+		....
+	]
+	
+	app-routing.ts
+	[
+		{
+			path:"user" , loadchildern:()=>import('./user/user.module').then(m=>m.userModule)
+		}
+	]
+	
+
+Today Lecture
+1 Bootstrap Overview
+	- It is css Freamwork
+	- It provides template CSS 
+	- It makes ur application responsive 
+	- It make ur application attractive
+	
+2 Integration Of Bootstrap
+	- 1 Online 
+		- u required 24*7 internet 
+		- u have use CDN Link 
+	- 2 Offline
+		- 
+3 Basic grid System
+
+
+What is Service?
+Ans -> - In Angular Service is simple typecript class
+	   - service can be inject into your components
+	   - service is used to communicate to components,module
+	   - services to increase modularity and code reusability
+	   - services to used code maintanability
+	   - service provide isolation to components from http end point url
+	   - Service is used to connect back end server to frontend
+	   - with the help of dependancy injection use service in components 
+	   - in angular dependancy injection is only constructor level.
+	
+
+
+
+
