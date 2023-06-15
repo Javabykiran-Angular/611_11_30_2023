@@ -1,0 +1,49 @@
+<p>demotdf works!</p>
+
+<div class="container">
+        <div class="row">
+            <div class="col">
+
+                <form #f="ngForm" >
+                    {{f.value| json}}
+                <div class="form-group">
+
+               
+                    <label for="">Username::</label>
+                    <input ngModel name="myusername" minlength="4" #username="ngModel" required pattern="admin"
+                    type="text" class="form-control" placeholder="Enter the username">
+                    
+                    <div *ngIf="username.touched && !username.valid"
+                    class="alert alert-danger">** Please Enter the Username
+                        <div *ngIf="username.errors?.minlength"> ** Please enter the username minimum {{username.errors?.minlength?.requiredLength}} characters 
+                        </div>                        
+                        <div *ngIf="username.errors?.pattern">** Please Enter the appropriate pattern
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="form-group">
+                    <label for="">Comment::</label>
+                    <textarea ngModel name="comment" #comment="ngModel" required
+                     class="form-control" placeholder="Enter the Comment." cols="30" rows="5">
+
+                    </textarea>
+
+                        <div *ngIf="comment.touched && comment.invalid"
+                        class="alert alert-danger">** Please Enter the Comment
+
+                        </div>
+
+                </div>
+                <br>
+
+                <button [disabled]="!f.valid" class="btn btn-outline-success">Submit</button>
+
+            </form>  
+            </div>
+
+        </div>
+
+</div>

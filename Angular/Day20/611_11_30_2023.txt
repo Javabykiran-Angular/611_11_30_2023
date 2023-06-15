@@ -1,0 +1,76 @@
+Last Lecture
+1 Bootstrap Overview
+	- It is css Freamwork
+	- It provides template CSS 
+	- It makes ur application responsive 
+	- It make ur application attractive
+	
+2 Integration Of Bootstrap
+	- 1 Online 
+		- u required 24*7 internet 
+		- u have use CDN Link => index.html
+		head => link 
+		
+	- 2 Offline
+		npm install bootstrap@4.6 --save
+		
+		style.css
+		@import '~bootstrap/dist/css/bootstrap.css';
+		
+3 Basic grid System
+	
+	<div class="conatiner">
+		<div class="row">	
+			<div class="col col-sm-4 col-lg-6">
+			
+			<table class="table table-dark ...">
+				...
+			
+			</div>
+			<div>
+				<div class="form-group">
+					<label>username:
+						<input class="form-control">
+						...
+					<button class="btn btn-success">
+			</div>
+
+
+What is Service?
+Ans -> - In Angular Service is simple typecript class
+	   - service can be inject into your components
+	   - service is used to communicate to components,module
+	   - services to increase modularity and code reusability
+	   - services to used code maintanability
+	   - service provide isolation to components from http end point url
+	   - Service is used to connect back end server to frontend
+	   - with the help of dependancy injection use service in components 
+	   - in angular dependancy injection is only constructor level.
+	
+
+
+Today Lecture
+1 template driven form
+	- design login,signup,f/b form 
+	- all basic level validation is perform on html file 
+	
+2 FormControl
+  - It is a class 
+	1 valid   => true/false 
+	2 invalid => true 
+	3 touched => true 
+	4 pristine => true  
+	5 dirty    => true 
+	6 errors => it is a object 
+	
+	steps 
+	1 create a instance of FormControl class => we have use ngModel directive without its notation and use name attribute=>  ng Model is hold the object of FormControl
+	2 create template ref variable & assign ngModel to it 
+	3 use errors property for validation and use required attribute
+	
+	
+3 ngForm
+4 json 
+
+
+
