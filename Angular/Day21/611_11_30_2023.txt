@@ -1,0 +1,30 @@
+Last Lecture
+1 template driven form
+	- design login,signup,f/b form 
+	- all basic level validation is perform on html file 
+	
+2 FormControl
+  - It is a class 
+	1 valid   => true/false 
+	2 invalid => true 
+	3 touched => true 
+	4 pristine => true  
+	5 dirty    => true 
+	6 errors => it is a object 
+	
+	steps 
+	1 create a instance of FormControl class => we have use ngModel directive without its notation and use name attribute=>  ng Model is hold the object of FormControl
+	2 create template ref variable & assign ngModel to it 
+	3 use errors property for validation and use required attribute
+	
+	
+3 ngForm
+4 json
+
+Today Lecture
+1 Continue TDF
+2 ngValue
+3 ngSubmit 
+
+
+
